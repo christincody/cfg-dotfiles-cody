@@ -3,7 +3,6 @@
 tap "caskroom/cask"
 tap "homebrew/bundle"
 tap "homebrew/core"
-tap "thoughtbot/formulae"
 brew "autoconf"
 brew "automake"
 brew "coreutils"
@@ -23,7 +22,6 @@ brew "vim"
 brew "yarn"
 brew "zsh"
 brew "zsh-completions"
-brew "thoughtbot/formulae/rcm"
 cask "1password"
 cask "atom"
 cask "google-chrome"
@@ -34,4 +32,5 @@ cask "spotify"
 mas "Alfred", id: 405843582
 mas "GIPHY CAPTURE", id: 668208984
 mas "iA Writer", id: 775737590
+mas "Kindle", id: 405399194
 mas "Twitter", id: 409789998
