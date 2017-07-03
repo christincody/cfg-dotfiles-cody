@@ -24,6 +24,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
