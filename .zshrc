@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/calebsanderson/.oh-my-zsh
+export ZSH=/Users/caleb/.oh-my-zsh
 
 # Default theme.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -37,7 +37,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias dotconfig='/usr/bin/git --git-dir=/Users/calebsanderson/.cfg-dotfiles/ --work-tree=/Users/calebsanderson'
+alias dotconfig='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
