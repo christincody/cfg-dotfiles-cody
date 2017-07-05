@@ -1,25 +1,27 @@
-# Instructions for using my dotfiles
+# Using My Dotfiles
 
-The general idea for my dotfiles setup comes from [Nicola Paolucci's](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) post about it. Instead of bitbucket, I am using Google shortened urls that link to shell scripts that are stored in raw public gists. The scripts are meant to be installed in order and each one contains instructions on the next link script to curl so that you can follow the breadcrumbs entirely or check out the code snippets at the urls for yourself and copy/paste the parts you want. It all gets kicked off with this repo though.  
+The general idea for my dotfiles setup comes from [Nicola Paolucci's](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) post about his method, which is of course built on someone else's (turtles all the way down). Nicola uses Bitbucket, but I am using shell scripts in Github gists and then making Google shortened urls out of the link to the raw file. The scripts are meant to be installed in order or independently as needed. Each script ends with an `echo` that contains instructions on the next script to `curl` so you can follow the breadcrumbs by copying, pasteing, and running them in succession or come to this repo and cherry-pick the ones you need. These scripts contain my personal preferences so check out the urls for yourself to make sure it is what you want. 
 
-I changed my alias to "dotconfig" instead of Nicola's "config" and my bare directory to ".cfg-dotfiles" instead of just ".cfg".
+Nicola's implementation works great but I changed my git alias to "dotconfig" instead of Nicola's "config" and my bare directory to ".cfg-dotfiles" instead of just ".cfg".
 
 The general order of operations is...  
 
 ## make the "dotconfig" alias
 - `alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
 - `echo ".cfg-dotfiles" >> .gitignore`  
+  - TODO - make this a script and beginnig of breadcrumbs OR is it even necessary?
 
 
 ## Install My [.cfg-dotfiles](https://github.com/cfsanderson/cfg-dotfiles)
-- `curl -Lks https://goo.gl/7xGC2L | /bin/bash`  
+- `curl -Lks https://goo.gl/7xGC2L | /bin/bash`
+  - this starts the process and from here you should be able to copy/paste the `===== curl -Lks <shortened url> | bash =====` command at the end of each script for a full, fresh install.
 
 
 ## [Install Homebrew](https://brew.sh/)
 - https://goo.gl/5LyA5C
-- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- `brew bundle` should install all dependencies from Brewfile
-  - see https://github.com/Homebrew/homebrew-bundle for more info  
+  - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+  - `brew bundle` should install all dependencies from Brewfile
+    - see https://github.com/Homebrew/homebrew-bundle for more info  
 
 
 ## [Checking for ZSH and make the default shell](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
@@ -29,37 +31,31 @@ The general order of operations is...
 - `chsh -s $(which zsh)` make it the default shell
 - Log out and login back again to use your new default shell.
 - `echo $SHELL` expected result: `/bin/zsh` or similar.  
+  - TODO - this could probably be cleaned up or combined as with the next script.
 
 ## Install Oh-My-Zsh
-- `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 - https://goo.gl/rysF9G
-- This may move existing .zshrc file to .zshrc.pre-oh-my-zsh. Simply rename the files and resource the terminal to load from preferred .zshrc  
+  - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+  - This may move existing .zshrc file to .zshrc.pre-oh-my-zsh. Simply rename the files and resource the terminal to load from preferred .zshrc  
 
 
 ## Get Powerline fonts for `Cousine for Powerline`
 
-- install script at https://goo.gl/pceWrc
-  ```
-  git clone https://github.com/powerline/fonts.git
-  cd fonts
-  ./install.sh
-  cd ..
-  rm -rf fonts
-  ```
-(comments are fine)  
+- https://goo.gl/pceWrc  
 
 
 ## Install [NVM](https://gist.github.com/cfsanderson/32bc37416c1373c5314d9ea98146fa7c) from script  
-- https://goo.gl/PKx3eV
+- https://goo.gl/PKx3eV  
+
 
 ## Install [NPM dependencies](https://gist.github.com/cfsanderson/087f5fd991a7b8edff0bcc5e451e2fef) from script  
-- https://goo.gl/VkzXbb
+- https://goo.gl/VkzXbb  
 
 
 ## Install [RVM](https://gist.github.com/cfsanderson/b4aad70c323058c309d2da5b0e2ffb70) from script  
 - https://goo.gl/P473b2
-- RVM wasn't working right so I added `rvm get stable --auto-dotfiles` per the message instructions and now it is working fine.
-- TODO - change install script to add `\curl -sSL https://get.rvm.io | bash -s stable --ruby` to first line.
+  - RVM wasn't working right so I added `rvm get stable --auto-dotfiles` per the message instructions and now it is working fine.
+  - TODO - change install script to add `\curl -sSL https://get.rvm.io | bash -s stable --ruby` to first line.
 
 
 ## Generate a New SSH Key (https://goo.gl/gWKCSX)
