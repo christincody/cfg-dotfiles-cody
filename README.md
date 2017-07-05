@@ -59,6 +59,7 @@ The general order of operations is...
 ## Install [RVM](https://gist.github.com/cfsanderson/b4aad70c323058c309d2da5b0e2ffb70) from script  
 - https://goo.gl/P473b2
 - RVM wasn't working right so I added `rvm get stable --auto-dotfiles` per the message instructions and now it is working fine.
+- TODO - change install script to add `\curl -sSL https://get.rvm.io | bash -s stable --ruby` to first line.
 
 
 ## Generate a New SSH Key (https://goo.gl/gWKCSX)
