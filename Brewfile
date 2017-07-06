@@ -1,5 +1,4 @@
-# Brewfile for my personal computer
-# here is a change to my brewfile
+# personal brewfile
 tap "caskroom/cask"
 tap "homebrew/bundle"
 tap "homebrew/core"
@@ -30,6 +29,7 @@ cask "iterm2"
 cask "slack"
 cask "spotify"
 mas "Alfred", id: 405843582
+mas "AntiSleep", id: 946798523
 mas "GIPHY CAPTURE", id: 668208984
 mas "iA Writer", id: 775737590
 mas "Kindle", id: 405399194
