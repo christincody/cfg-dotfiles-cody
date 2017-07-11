@@ -18,11 +18,14 @@ brew "macvim"
 brew "mas"
 brew "openssl@1.1"
 brew "pkg-config"
+brew "tidy-html5"
 brew "vim"
 brew "yarn"
+brew "z"
 brew "zsh"
 brew "zsh-completions"
 cask "1password"
+cask "adobe-creative-cloud"
 cask "atom"
 cask "google-chrome"
 cask "google-drive"
@@ -30,7 +33,7 @@ cask "iterm2"
 cask "slack"
 cask "spotify"
 mas "Alfred", id: 405843582
-mas "AntiSleep", id: 946798523
+mas "Amphetamine", id: 937984704
 mas "CloudApp", id: 417602904
 mas "GIPHY CAPTURE", id: 668208984
 mas "iA Writer", id: 775737590
