@@ -25,6 +25,7 @@ brew "z"
 brew "zsh"
 brew "zsh-completions"
 cask "1password"
+cask "adobe-acrobat-reader"
 cask "atom"
 cask "google-chrome"
 cask "google-drive"
@@ -33,6 +34,7 @@ cask "slack"
 cask "spotify"
 mas "Alfred", id: 405843582
 mas "Amphetamine", id: 937984704
+mas "Boom 2", id: 948176063
 mas "CloudApp", id: 417602904
 mas "GIPHY CAPTURE", id: 668208984
 mas "iA Writer", id: 775737590
