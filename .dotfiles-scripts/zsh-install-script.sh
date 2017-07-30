@@ -6,6 +6,6 @@ echo "confirm expected result: '/bin/zsh' or similar"
 # make ZSH the default shell
 chsh -s $(which zsh)
 
-echo "===== Log out and login back again to use your new default shell. ====="
+echo "===== Log out and login back again (or source) to use your new default shell. ====="
 echo "===== Next Step: Install Oh-My-Zsh ====="
 echo "===== curl -Lks https://goo.gl/VVZJ46 | bash ====="
