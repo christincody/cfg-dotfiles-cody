@@ -1,5 +1,5 @@
 # install stable version
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
+curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 # loads rvm
 source ~/.rvm/scripts/rvm
