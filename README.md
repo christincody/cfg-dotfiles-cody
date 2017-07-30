@@ -1,6 +1,6 @@
 # Using My Dotfiles
 
-The general idea for my dotfiles setup comes from [Nicola Paolucci's](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) post about his method, which is of course built on someone else's (turtles all the way down). Nicola uses Bitbucket, but I am using shell scripts in Github gists and then making Google shortened urls out of the link to the raw file. The scripts are meant to be installed in order or independently as needed. Each script ends with an `echo` that contains instructions on the next script to `curl` so you can follow the breadcrumbs by copying, pasteing, and running them in succession or come to this repo and cherry-pick the ones you need. These scripts contain my personal preferences so check out the urls for yourself to make sure it is what you want. 
+The general idea for my dotfiles setup comes from [Nicola Paolucci's](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) post about his method, which is of course built on someone else's (turtles all the way down). Nicola uses Bitbucket, but I am using shell scripts in Github gists and then making Google shortened urls out of the link to the raw file. The scripts are meant to be installed in order or independently as needed. Each script ends with an `echo` that contains instructions on the next script to `curl` so you can follow the breadcrumbs by copying, pasteing, and running them in succession or come to this repo and cherry-pick the ones you need. These scripts contain my personal preferences so check out the urls for yourself to make sure it is what you want.
 
 Nicola's implementation works great but I changed my git alias to "dotconfig" instead of Nicola's "config" and my bare directory to ".cfg-dotfiles" instead of just ".cfg".
 
@@ -77,8 +77,9 @@ The general order of operations is...
   - back in GitHub paste into the key field and save in GitHub - will ask to re-enter GH password (from 1Password)  
 
 
+
 ## Atom
-- install `sync-settings` package
+- [ ] install `sync-settings` package
 - use credentials from 1password to login, download, and update all packages
 - in settings of `glist` package, paste github access token from 1password under "Glist - Atom Package"  
 
@@ -88,3 +89,10 @@ The general order of operations is...
 - [ ] Postman -  https://app.getpostman.com/app/download/osx64
 - [ ] Amazon Music
 
+
+## TODOs
+- [ ] Make a "Screenshots" folder in Google Drive and change default location for screenshots to that directory
+  - [ ] `mkdir Google\ Drive/Screenshots`
+  - [ ] `defaults write com.apple.screencapture location /Users/caleb/Google\ Drive/Screenshots`
+  - [ ] `killall SystemUIServer`
+- [ ] 
