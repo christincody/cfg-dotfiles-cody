@@ -37,7 +37,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias dotconfig='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
+alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
