@@ -1,6 +1,6 @@
 # Using My Dotfiles
 
-The general idea for my dotfiles setup comes from [Nicola Paolucci's](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) post about his method, which is of course built on someone else's (turtles all the way down). Nicola uses Bitbucket, but I am using shell scripts in Github gists and then making Google shortened urls out of the link to the raw file. The scripts are meant to be installed in order or independently as needed. Each script ends with an `echo` that contains instructions on the next script to `curl` so you can follow the breadcrumbs by copying, pasteing, and running them in succession or come to this repo and cherry-pick the ones you need. These scripts contain my personal preferences so check out the urls for yourself to make sure it is what you want.
+The general idea for my dotfiles setup comes from [Nicola Paolucci's](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) post about his method, which is of course built on someone else's. Nicola uses Bitbucket, but I am using shell scripts in priveat Github gists and then making Google shortened urls out of the link to the raw file. The scripts are meant to be installed in order or independently as needed. Each script ends with an `echo` that contains instructions on the next script to `curl` so you can follow the breadcrumbs by copying, pasteing, and running them in succession or come to this repo and cherry-pick the ones you need. These scripts contain my personal preferences so check out the urls for yourself to make sure it is what you want.
 
 Nicola's implementation works great but I changed my git alias to "dotconfig" instead of Nicola's "config" and my bare directory to ".cfg-dotfiles" instead of just ".cfg".
 
@@ -9,7 +9,7 @@ The general order of operations is...
 ## make the "dotconfig" alias
 - `alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
 - `echo ".cfg-dotfiles" >> .gitignore`  
-  - TODO - make this a script and beginnig of breadcrumbs OR is it even necessary?
+  - TODO - make this a script and beginning of breadcrumbs OR is it even necessary?
 
 
 ## Install My [.cfg-dotfiles](https://github.com/cfsanderson/cfg-dotfiles)
@@ -95,4 +95,5 @@ The general order of operations is...
   - [ ] `mkdir Google\ Drive/Screenshots`
   - [ ] `defaults write com.apple.screencapture location /Users/caleb/Google\ Drive/Screenshots`
   - [ ] `killall SystemUIServer`
-- [ ] 
+- [ ] Update gist urls using this pattern for linking to latest version.
+  - https://gist.github.com/<USER_NAME>/<GIST_ID>/raw/<GIST_FILE_NAME>
