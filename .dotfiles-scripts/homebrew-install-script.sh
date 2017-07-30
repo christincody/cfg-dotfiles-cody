@@ -5,4 +5,4 @@ echo "===== Installing all Brewfile dependencies ====="
 brew bundle
 
 echo "===== Next Step: Make ZSH default shell ====="
-echo "===== curl -Lks <zsh install script url here> | bash ====="
+echo "===== curl -Lks https://goo.gl/cQ2MMf | bash ====="

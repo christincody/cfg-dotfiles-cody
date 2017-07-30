@@ -17,6 +17,5 @@ cfg checkout
 cfg config status.showUntrackedFiles no
 
 echo "===== Step 2: Install Homebrew ====="
-echo "===== 'curl -Lks <homebrew install url> | bash' ====="
+echo "===== 'curl -Lks https://goo.gl/CX7f53 | bash' ====="
 echo "===== check to make sure terminal is running correctly - resource ====="
-

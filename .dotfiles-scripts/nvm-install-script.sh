@@ -12,4 +12,4 @@ command -v nvm
 
 echo "===== should output 'nvm' ====="
 echo "===== Next Step: install NPM dependencies ====="
-echo "===== curl -Lks <NPM install script here> | bash ====="
+echo "===== curl -Lks https://goo.gl/c9j2wm | bash ====="

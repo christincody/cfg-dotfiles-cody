@@ -16,4 +16,4 @@ rvm list known
 which ruby
 
 echo "===== Next Step: Install new SSH keys ====="
-echo "===== curl -Lks <next url here> | bash ====="
+echo "===== curl -Lks https://goo.gl/AYnQBp | bash ====="
