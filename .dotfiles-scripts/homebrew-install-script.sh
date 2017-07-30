@@ -6,3 +6,4 @@ brew bundle
 
 echo "===== Next Step: Make ZSH default shell ====="
 echo "===== curl -Lks https://goo.gl/cQ2MMf | bash ====="
+echo "===== for more info: https://github.com/Homebrew/homebrew-bundle ====="
