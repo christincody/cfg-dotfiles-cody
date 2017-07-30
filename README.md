@@ -6,10 +6,10 @@ Nicola's implementation works great but I changed my git alias to "dotconfig" in
 
 The general order of operations is...  
 
-## make the "dotconfig" alias
-- `alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'`
-- `echo ".cfg-dotfiles" >> .gitignore`  
-  - TODO - make this a script and beginning of breadcrumbs OR is it even necessary?
+
+## make the "dotconfig" alias get everything started
+- `curl -Lks http://bit.do/cfsanderson-dotfiles`
+  - to see stats on this link visit `http://bit.do/cfsanderson-dotfiles-`
 
 
 ## Install My [.cfg-dotfiles](https://github.com/cfsanderson/cfg-dotfiles)
@@ -97,3 +97,15 @@ The general order of operations is...
   - [ ] `killall SystemUIServer`
 - [ ] Update gist urls using this pattern for linking to latest version.
   - https://gist.github.com/<USER_NAME>/<GIST_ID>/raw/<GIST_FILE_NAME>
+
+
+
+
+echo "                __                     _                            "
+echo "    ____       / _|                   | |                           "
+echo "   / __ \  ___| |_ ___  __ _ _ __   __| | ___ _ __ ___  ___  _ __   "
+echo "  / / _` |/ __|  _/ __|/ _` | '_ \ / _` |/ _ \ '__/ __|/ _ \| '_ \  "
+echo " | | (_| | (__| | \__ \ (_| | | | | (_| |  __/ |  \__ \ (_) | | | | "
+echo "  \ \__,_|\___|_| |___/\__,_|_| |_|\__,_|\___|_|  |___/\___/|_| |_| "
+echo "   \____/                                                           "
+echo "                                                                    "
