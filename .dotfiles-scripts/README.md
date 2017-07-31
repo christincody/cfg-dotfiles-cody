@@ -1,5 +1,6 @@
-These install scripts are daisy-chained together using `bit.do` shortened urls that link back to the raw files on Github. They are meant to be run in succession starting with the `xcode-install-script` which is generally the first thing in a fresh install on a new machine. Although they can be run consecutively, some are useful as stand alone install scripts. You can visit the links directly to check out the code or read them on Github. Install them using the `curl -Lks <url> | bash` command from any bash shell. Below is an ordered list of the urls and a brief description of what they accomplish.
+These install scripts are daisy-chained together using `bit.do` shortened urls that link back to the raw files on Github. They are meant to be run in succession starting with the `xcode-install-script` which is generally the first thing in a fresh install on a new machine. Although they can be run consecutively, some are useful as stand alone install scripts. You can visit the links directly to check out the code or read them on Github. Install them using the `curl -Lks http://bit.do/cfsanderson | bash` command from any bash shell. Below is an ordered list of the urls and a brief description of what they accomplish.
 
+1a. `curl -Lks http://bit.do/cfsanderson | bash` just echos a creative ascii art name with the next xcode link and the github repo url.
 1. http://bit.do/cfsanderson-xcode
   - installs Xcode select
 2. http://bit.do/cfsanderson-cfg-alias
