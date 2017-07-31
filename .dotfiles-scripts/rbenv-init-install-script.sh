@@ -3,7 +3,7 @@
 
 rbenv init
 
-echo "===== manually add '' to the .bash_profile or .zshrc file ====="
+echo "===== manually add 'eval \"$(rbenv init -)\"' to the .bash_profile or .zshrc file ====="
 echo ""
 echo ""
 echo ""
