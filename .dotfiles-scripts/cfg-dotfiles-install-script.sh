@@ -19,5 +19,5 @@ cfg config status.showUntrackedFiles no
 echo ""
 echo ""
 echo ""
-echo "===== Next: Install Homebrew and 'brew bundle'? ====="
-echo "===== 'curl -Lks http://bit.do/cfsanderson-homebrew | bash' ====="
+echo "=====      Next: Install Homebrew and 'brew bundle'?      ====="
+echo "===== curl -Lks http://bit.do/cfsanderson-homebrew | bash ====="

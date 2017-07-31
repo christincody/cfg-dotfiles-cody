@@ -4,5 +4,5 @@ npm install -g nodemon
 echo ""
 echo ""
 echo ""
-echo "===== Next Step: Install rbenv ====="
+echo "=====           Next Step: Install rbenv          ====="
 echo "===== curl http://bit.do/cfsanderson-rbenv | bash ====="

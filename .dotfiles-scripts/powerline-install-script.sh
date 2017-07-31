@@ -7,5 +7,5 @@ rm -rf fonts
 echo ""
 echo ""
 echo ""
-echo "===== Next: Install NVM? ====="
+echo "=====               Next: Install NVM?               ====="
 echo "===== curl -Lks http://bit.do/cfsanderson-nvm | bash ====="
