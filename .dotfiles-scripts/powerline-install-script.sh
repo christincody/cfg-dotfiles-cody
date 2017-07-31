@@ -4,5 +4,8 @@ cd fonts
 cd ..
 rm -rf fonts
 
-echo "===== Next Step: Install NVM ====="
-echo "===== curl -Lks https://goo.gl/QbJQQQ | bash ====="
+echo ""
+echo ""
+echo ""
+echo "===== Next: Install NVM? ====="
+echo "===== curl -Lks http://bit.do/cfsanderson-nvm | bash ====="

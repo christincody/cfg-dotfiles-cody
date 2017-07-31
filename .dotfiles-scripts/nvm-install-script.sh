@@ -11,5 +11,8 @@ nvm install node
 command -v nvm
 
 echo "===== should output 'nvm' ====="
-echo "===== Next Step: install NPM dependencies ====="
-echo "===== curl -Lks https://goo.gl/c9j2wm | bash ====="
+echo ""
+echo ""
+echo ""
+echo "===== Next: install NPM dependencies? ====="
+echo "===== curl -Lks http://bit.do/cfsanderson-npm | bash ====="
