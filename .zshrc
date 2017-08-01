@@ -1,57 +1,55 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
+#=====================================================
+#============    @cfsanderson .zshrc   ===============
+#=====================================================
 export ZSH=/Users/caleb/.oh-my-zsh
 
-# Default theme.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+
+#====================    THEME    ====================
 ZSH_THEME=amuse
 
-# Uncomment the following line to enable command auto-correction.
+
+#====================    STUFF    ====================
 ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
-# Stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# optional formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+
+#====================  PLUGINS  ====================
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew chucknorris npm osx rand-quote web-search)
+
+
+#====================  ALIASES  ====================
 
 source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# ssh
+#====================  SSH  ====================
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-# Aliases can be placed here, though oh-my-zsh users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#--------------------------------------------------------------------------------------
-#----------------------------------  ALIASES  -----------------------------------------
-#--------------------------------------------------------------------------------------
+
+#====================  ALIASES  ====================
 alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
 alias be='bundle exec'
 alias bbd='brew bundle dump -f'
 alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='bundle exec jekyll serve --watch --config _config_dev.yml'
 
-#--------------------------------------------------------------------------------------
-#----------------------------------    NVM    -----------------------------------------
-#--------------------------------------------------------------------------------------
 
+#====================    NVM    ====================
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# rbenv
+
+#====================    RBENV    ====================
 eval "$(rbenv init -)"
+
+
+#====================    TODOOZ    ====================
+# TODO - Move aliases to ZSH_CUSTOM folder ???
+# TODO - Move plugins to ~/.oh-my-zsh/custom/plugins/ ???
