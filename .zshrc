@@ -34,12 +34,21 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
-# Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Aliases can be placed here, though oh-my-zsh users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+#--------------------------------------------------------------------------------------
+#----------------------------------  ALIASES  -----------------------------------------
+#--------------------------------------------------------------------------------------
 alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
+alias be='bundle exec'
+alias bbd='brew bundle dump -f'
+alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
+alias jsslow='bundle exec jekyll serve --watch --config _config_dev.yml'
 
-# NVM
+#--------------------------------------------------------------------------------------
+#----------------------------------    NVM    -----------------------------------------
+#--------------------------------------------------------------------------------------
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
