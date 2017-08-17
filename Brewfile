@@ -33,6 +33,7 @@ cask "adobe-acrobat-reader"
 cask "atom"
 cask "google-chrome"
 cask "iterm2"
+cask "mamp"
 cask "slack"
 cask "spotify"
 mas "Alfred", id: 405843582
