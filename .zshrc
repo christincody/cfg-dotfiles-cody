@@ -38,7 +38,8 @@ alias be='bundle exec'
 alias bbd='brew bundle dump -f'
 alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='bundle exec jekyll serve --watch --config _config_dev.yml'
-
+alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
+alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 
 #====================    NVM    ====================
 export NVM_DIR="$HOME/.nvm"
