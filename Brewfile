@@ -25,6 +25,7 @@ brew "pkg-config"
 brew "postgresql", restart_service: true
 brew "rbenv"
 brew "tidy-html5"
+brew "tree"
 brew "vim"
 brew "yarn"
 brew "youtube-dl"
