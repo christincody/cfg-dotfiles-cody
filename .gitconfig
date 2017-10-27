@@ -4,3 +4,5 @@
 	name = cfsanderson
 	email = calebsanderson@gmail.com
 	
+[core]
+	editor = atom
