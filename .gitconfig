@@ -5,4 +5,4 @@
 	email = calebsanderson@gmail.com
 	
 [core]
-	editor = atom
+	editor = vim

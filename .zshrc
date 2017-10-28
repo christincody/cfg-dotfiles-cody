@@ -9,7 +9,7 @@ ZSH_THEME=amuse
 
 
 #====================    STUFF    ====================
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 COMPLETION_WAITING_DOTS="true"
 
