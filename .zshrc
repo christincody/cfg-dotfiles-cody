@@ -5,8 +5,7 @@ export ZSH=/Users/caleb/.oh-my-zsh
 
 
 #====================    THEME    ====================
-ZSH_THEME=amused
-
+ZSH_THEME=amuse
 
 #====================    STUFF    ====================
 ENABLE_CORRECTION="false"
