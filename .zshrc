@@ -40,6 +40,8 @@ alias jsslow='bundle exec jekyll serve --watch --config _config_dev.yml'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias c='clear'
+alias sasswatch='sass --watch scss:css --style compressed'
+
 
 #====================    NVM    ====================
 export NVM_DIR="$HOME/.nvm"
