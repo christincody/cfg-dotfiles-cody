@@ -42,6 +42,14 @@ alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool f
 alias c='clear'
 alias sasswatch='sass --watch scss:css --style compressed'
 
+# touchopen() creates a file and pops it open in one step
+touchopen() {
+	if ! [ "$1" ]; then
+		echo "need a file!" >&2
+		return 1
+	fi
+	: > "$1" && open "$1"
+}
 
 #====================    NVM    ====================
 export NVM_DIR="$HOME/.nvm"
