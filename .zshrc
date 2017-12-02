@@ -42,7 +42,8 @@ alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool f
 alias c='clear'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias to=touch_open
-# touchopen() creates a file and pops it open in one step
+
+# touchopen() creates a file and opens it in the default editor in one step
 touch_open() {
 	if ! [ "$1" ]; then
 		echo "need a file!" >&2
