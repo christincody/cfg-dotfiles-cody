@@ -41,9 +41,9 @@ alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool t
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias c='clear'
 alias sasswatch='sass --watch scss:css --style compressed'
-
+alias to=touch_open
 # touchopen() creates a file and pops it open in one step
-touchopen() {
+touch_open() {
 	if ! [ "$1" ]; then
 		echo "need a file!" >&2
 		return 1
