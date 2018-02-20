@@ -43,6 +43,7 @@ alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool f
 alias c='clear'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias to=touch_open
+alias imagemin="node ~/Scripts/imagemin.js"
 
 # touchopen() creates a file and opens it in the default editor in one step
 touch_open() {
