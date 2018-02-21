@@ -31,21 +31,21 @@ source $ZSH/oh-my-zsh.sh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 
-#====================  ALIASES  ====================
+# #====================  ALIASES  ====================
+alias bbd='brew bundle dump -f'
+alias be='bundle exec'
+alias c='clear'
 alias cfg='/usr/bin/git --git-dir=/Users/caleb/.cfg-dotfiles/ --work-tree=/Users/caleb'
 alias cfgloga='cfg log --oneline --decorate --graph --all'
-alias be='bundle exec'
-alias bbd='brew bundle dump -f'
+alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
+alias imagemin="node ~/Scripts/imagemin.js"
 alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='bundle exec jekyll serve --watch --config _config_dev.yml'
-alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
-alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
-alias c='clear'
 alias sasswatch='sass --watch scss:css --style compressed'
-alias to=touch_open
-alias imagemin="node ~/Scripts/imagemin.js"
+alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
 
 # touchopen() creates a file and opens it in the default editor in one step
+alias to=touch_open
 touch_open() {
 	if ! [ "$1" ]; then
 		echo "need a file!" >&2
