@@ -1,19 +1,14 @@
-# Using My Dotfiles
-
-The general idea for my dotfiles setup comes from [Nicola Paolucci's](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) post about his method, which is of course built on someone else's. Nicola uses Bitbucket, but I am using shortened links to the raw file versions of shell scripts. The scripts are meant to be installed in order or independently as needed. Each script ends with an `echo` that contains instructions on the next script to `curl` so you can follow the breadcrumbs by copying, pasteing, and running them in succession or come to this repo and cherry-pick the ones you need. These scripts contain my personal preferences so check out the urls for yourself to make sure it is what you want.
-
-Nicola's implementation works great but I changed my git alias to "cfg" instead of his "config" and my bare directory to ".cfg-dotfiles" instead of just ".cfg".
+The general idea for my dotfiles setup comes from [Nicola Paolucci's](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) post. I use shortened bit.do links to the raw file versions of shell scripts. Each script ends with the next url to `curl` so they can be installed in order for a full set-up or independently as needed, just follow the breadcrumbs. The scripts contain my personal preferences so check out the code at the urls for yourself to make sure it is what you want.
 
 ## General Order of Operations  
 
-- Start with some fun...
-  - `curl -Lks http://bit.do/cfsanderson`
-- Make the "cfg" alias get everything started
+- Run `curl -Lks http://bit.do/cfsanderson`. It doesn't actually do anything, just ascii art and gives you the first url to `curl`.
+- Make the "cfg" alias and get everything started
   - `curl -Lks http://bit.do/cfsanderson-dotfiles | bash`
     - to see stats on this link visit `http://bit.do/cfsanderson-dotfiles-`
-  - follow the breadcrumbs echoed at the end of each subsequent terminal process by copying, pasteing, and running the command.
-    - e.g. `===== curl -Lks <shortened url> | bash =====`
-  - all shell scripts live here are in the [.dotfiles-scripts](https://github.com/cfsanderson/cfg-dotfiles/tree/master/.dotfiles-scripts) directory of the .cfg-dotfiles repo.
+  - follow the breadcrumbs that are echoed at the end of each subsequent terminal process by copying, pasteing, and running the command.
+    - e.g. `curl -Lks <shortened url> | bash`
+  - all shell scripts live here in the [.dotfiles-scripts](https://github.com/cfsanderson/cfg-dotfiles/tree/master/.dotfiles-scripts) directory of the .cfg-dotfiles repo.
 - Clone my [.cfg-dotfiles](https://github.com/cfsanderson/cfg-dotfiles) repo
 - [Install Homebrew](https://brew.sh/)
 - [Checking for ZSH and make the default shell](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
@@ -32,8 +27,8 @@ Nicola's implementation works great but I changed my git alias to "cfg" instead 
     - will generate the keys (public and private) in own files and show random art.
     - `eval "$(ssh-agent -s)"`
     - `ssh-add ~/.ssh/id_rsa`
-    - follow with password (the same as computer login)
+    - follow with password
   - go to **GitHub > settings > SSH and GPG keys** and delete old SSH key and click on "New SSH Key" button.
   - back in terminal run `pbcopy < ~/.ssh/id_rsa.pub` which will copy the contents of the public key
     - (didn't work for me so I opened the file and copied the contents of the file manually)
-  - back in GitHub paste into the key field and save in GitHub - will ask to re-enter GH password (from 1Password)
+  - back in GitHub paste into the key field and save in GitHub - will ask to re-enter GH password.
