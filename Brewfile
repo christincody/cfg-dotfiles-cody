@@ -27,6 +27,7 @@ brew "pkg-config"
 brew "postgresql", restart_service: true
 brew "ruby-build"
 brew "rbenv"
+brew "speedtest-cli"
 brew "tidy-html5"
 brew "tldr"
 brew "tree"
@@ -41,7 +42,6 @@ cask "1password"
 cask "adobe-acrobat-reader"
 cask "android-file-transfer"
 cask "atom"
-cask "cyberduck"
 cask "firefox"
 cask "google-chrome"
 cask "iterm2"
@@ -55,8 +55,8 @@ mas "Alfred", id: 405843582
 mas "Amphetamine", id: 937984704
 mas "Boom 2", id: 948176063
 mas "feedly", id: 865500966
+mas "GarageBand", id: 682658836
 mas "GIPHY CAPTURE", id: 668208984
 mas "iA Writer", id: 775737590
 mas "Kindle", id: 405399194
 mas "SketchBook", id: 863486266
-mas "Twitter", id: 409789998
