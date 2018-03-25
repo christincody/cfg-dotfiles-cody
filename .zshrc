@@ -51,7 +51,6 @@ touch_open() {
 	fi
 	: > "$1" && open "$1"
 }
-alias today='date +'%F %T''
 
 #====================    NVM    ====================
 export NVM_DIR="$HOME/.nvm"
