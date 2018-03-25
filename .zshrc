@@ -43,8 +43,6 @@ alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='bundle exec jekyll serve --watch --config _config_dev.yml'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
-
-# touchopen() creates a file and opens it in the default editor in one step
 alias to=touch_open
 touch_open() {
 	if ! [ "$1" ]; then
@@ -53,6 +51,7 @@ touch_open() {
 	fi
 	: > "$1" && open "$1"
 }
+alias today='date +'%F %T''
 
 #====================    NVM    ====================
 export NVM_DIR="$HOME/.nvm"
