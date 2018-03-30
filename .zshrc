@@ -51,6 +51,7 @@ touch_open() {
 	fi
 	: > "$1" && open "$1"
 }
+alias lsa='ls -a'
 
 #====================    NVM    ====================
 export NVM_DIR="$HOME/.nvm"

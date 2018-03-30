@@ -1,3 +1,7 @@
+// http://fuzzytolerance.info/blog/2018/02/19/I-made-my-own-image-minifier-so-you-don-t-have-to/
+// `alias imagemin="node ~/scripts/imagemin.js"`
+// `imagemin --in indirectory --out outdirectory`
+
 const imagemin = require('imagemin');
 const imageminGifsicle = require('imagemin-gifsicle');
 const imageminMozjpeg = require('imagemin-mozjpeg');
