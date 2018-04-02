@@ -436,13 +436,15 @@
 		</dict>
 	</dict>
 	<key>Default Bookmark Guid</key>
-	<string>68F8E65E-3F38-439C-92E7-259DE368B5A1</string>
+	<string>1451984C-EDF7-443B-AF87-A82D9FE8AEBF</string>
 	<key>HideTab</key>
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Configs/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -484,19 +486,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>606 110 768 186 0 0 1440 877 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>86 246 400 129 0 0 1440 877 </string>
+	<string>465 156 607 236 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>701 379 620 392 0 0 1440 877 </string>
+	<string>-1282 381 643 461 -1920 -66 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>712 275 599 519 0 0 1440 877 </string>
+	<string>466 229 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>363 274 796 473 0 0 1440 877 </string>
+	<string>441 236 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>694 0 746 877 0 0 1440 877 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1253,15 +1253,17 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12941177189350128</real>
+				<real>0.12941176470588237</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12156862765550613</real>
+				<real>0.12156862745098039</real>
 				<key>Red Component</key>
-				<real>0.11372549086809158</real>
+				<real>0.11372549019607843</real>
 			</dict>
-			<key>Background Image Location</key>
-			<string>/Users/caleb/Configs/iTerm/desktop-black-blank-02.png</string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -2383,22 +2385,20 @@
 			<string>/Users/caleb</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>6A4DEA1F-F586-4EB1-A94B-993B3EF4590D</string>
+	<string>C7FCA4E1-B069-43D5-B998-3DB27B168E43</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
-	<key>NoSyncReplaceProfileWarning</key>
-	<true/>
-	<key>NoSyncReplaceProfileWarning_selection</key>
-	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>523132589.88731003</real>
+	<real>523683036.62657398</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>PointerActions</key>
@@ -2438,17 +2438,21 @@
 	<string>/Users/caleb/Configs/iTerm</string>
 	<key>PromptOnQuit</key>
 	<false/>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=73</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=7</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-04-01T05:57:38Z</date>
+	<date>2018-04-02T04:03:06Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>Secure Input</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<true/>
@@ -2458,5 +2462,9 @@
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
 	<string>3.1.5</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
