@@ -1,7 +1,0 @@
-# Trash-cli commands
-
-trash-put           trash files and directories.
-trash-empty         empty the trashcan(s).
-trash-list          list trashed files.
-trash-restore       restore a trashed file.
-trash-rm            remove individual files from the trashcan.
