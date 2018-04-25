@@ -43,6 +43,7 @@ alias jsfast='bundle exec jekyll serve --watch --limit_posts 1'
 alias jsslow='bundle exec jekyll serve --watch --config _config_dev.yml'
 alias sasswatch='sass --watch scss:css --style compressed'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
+alias st='speedtest'
 alias to=touch_open
 touch_open() {
 	if ! [ "$1" ]; then
