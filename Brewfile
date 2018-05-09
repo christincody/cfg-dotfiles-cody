@@ -48,12 +48,17 @@ brew "zsh"
 brew "zsh-completions"
 brew "heroku/brew/heroku"
 cask "1password"
+cask "adobe-acrobat-reader"
 cask "android-file-transfer"
+cask "atom"
+cask "cyberduck"
 cask "firefox"
 cask "google-chrome"
 cask "iterm2"
 cask "mamp"
+cask "real-vnc"
 cask "slack"
+cask "sonic-pi"
 cask "spotify"
 cask "visual-studio-code"
 mas "Alfred", id: 405843582
@@ -62,3 +67,4 @@ mas "Boom 2", id: 948176063
 mas "GIPHY CAPTURE", id: 668208984
 mas "iA Writer", id: 775737590
 mas "Kindle", id: 405399194
+mas "Xcode", id: 497799835
