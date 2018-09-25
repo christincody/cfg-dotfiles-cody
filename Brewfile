@@ -1,8 +1,8 @@
 tap "heroku/brew"
-tap "homebrew/core"
 tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
 tap "homebrew/services"
-tap "caskroom/cask"
 brew "autoconf"
 brew "automake"
 brew "gettext"
@@ -13,13 +13,13 @@ brew "exercism"
 brew "fortune"
 brew "readline"
 brew "sqlite"
+brew "python"
 brew "git"
 brew "hub"
 brew "libtool"
 brew "imagemagick"
 brew "libksba"
 brew "libyaml"
-brew "python"
 brew "macvim"
 brew "mapnik"
 brew "mas"
@@ -62,5 +62,6 @@ mas "Alfred", id: 405843582
 mas "Amphetamine", id: 937984704
 mas "Boom 2", id: 948176063
 mas "GIPHY CAPTURE", id: 668208984
+mas "iA Writer", id: 775737590
 mas "Kindle", id: 405399194
 mas "Xcode", id: 497799835
