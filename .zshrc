@@ -53,6 +53,8 @@ touch_open() {
 	: > "$1" && open "$1"
 }
 alias lsa='ls -a'
+alias tp='trash-put'
+alias gohome='~ && ls -la'
 
 #====================    NVM    ====================
 export NVM_DIR="$HOME/.nvm"
