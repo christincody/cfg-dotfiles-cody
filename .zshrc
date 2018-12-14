@@ -55,6 +55,7 @@ touch_open() {
 alias lsa='ls -a'
 alias tp='trash-put'
 alias gohome='~ && ls -la'
+alias notes='cd ~/Projects/NOTES && code .'
 
 #====================    NVM    ====================
 export NVM_DIR="$HOME/.nvm"
