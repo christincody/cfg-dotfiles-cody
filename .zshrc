@@ -3,6 +3,7 @@
 #=====================================================
 export ZSH=/Users/caleb/.oh-my-zsh
 
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 #====================    THEME    ====================
 ZSH_THEME=amuse
