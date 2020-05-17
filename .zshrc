@@ -37,8 +37,10 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 alias bbd='brew bundle dump -f'
 alias be='bundle exec'
 alias c='clear'
-alias cfg='/usr/bin/git --git-dir=/Users/cody/.cfg-dotfiles/ --work-tree=/Users/cody'
-alias cfgloga='cfg log --oneline --decorate --graph --all'
+alias conf='/usr/bin/git --git-dir=/Users/cody/.cfg-dotfiles/ --work-tree=/Users/cody'
+alias confloga='conf log --oneline --decorate --graph --all'
+alias conflog='conf log'
+alias confstat='conf status'
 alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
 alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
 alias st='speedtest'
@@ -46,12 +48,6 @@ alias lsa='ls -a'
 alias tp='trash-put'
 alias gohome='~ && ls -la'
 alias notes='cd ~/Projects/Notes && code .'
+alias vimrc='vim ~/.vimrc'
 
-#====================    NVM    ====================
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-#====================    RBENV    ====================
-eval "$(rbenv init -)"
+. $(brew --prefix asdf)/asdf.sh
