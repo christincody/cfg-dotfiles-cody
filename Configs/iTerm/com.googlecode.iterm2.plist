@@ -587,6 +587,135 @@
 	<false/>
 	<key>DimOnlyText</key>
 	<true/>
+	<key>GlobalKeyMap</key>
+	<dict>
+		<key>0x19-0x60000</key>
+		<dict>
+			<key>Action</key>
+			<integer>39</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x68-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>18</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x6a-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>20</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x6b-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>21</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x6c-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>19</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0x9-0x40000</key>
+		<dict>
+			<key>Action</key>
+			<integer>32</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf700-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>7</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf701-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>6</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf702-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>2</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf702-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>33</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>0</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>34</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf729-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>5</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72b-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>4</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72c-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>9</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72c-0x20000</key>
+		<dict>
+			<key>Action</key>
+			<integer>9</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72d-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>8</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf72d-0x20000</key>
+		<dict>
+			<key>Action</key>
+			<integer>8</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+	</dict>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -647,7 +776,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>518 396 918 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 -63 710 877 0 0 1440 900 </string>
+	<string>0 4 1438 873 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2 0 1438 877 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1306,11 +1435,11 @@
 			<key>Name</key>
 			<string>cfsanderson_gruvbox-material-improved</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>FiraMonoForPowerline-Regular 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraMonoForPowerline-Regular 12</string>
+			<string>FiraCodeiScript-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Place Prompt at First Column</key>
@@ -1751,7 +1880,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
+			<true/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -4514,6 +4643,8 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Monaco</string>
+		<string>Fira Code iScript</string>
 		<string>Fira Mono for Powerline</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
@@ -4521,14 +4652,14 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{398, 710}</string>
+		<string>{397, 710}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>5F803630-36EB-47AC-980E-4E86CABBC831</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>11</integer>
+	<integer>12</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>

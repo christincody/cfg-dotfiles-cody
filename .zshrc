@@ -1,53 +1,50 @@
-#=====================================================
-#============    @cfsanderson .zshrc   ===============
-#============    for @christincody     ===============
-#=====================================================
-export ZSH=/Users/cody/.oh-my-zsh
+#===============================================================================
+#                 ____                     __
+#           _____/ __/________ _____  ____/ /__  ______________  ____
+#          / ___/ /_/ ___/ __ `/ __ \/ __  / _ \/ ___/ ___/ __ \/ __ \
+#         / /__/ __(__  ) /_/ / / / / /_/ /  __/ /  (__  ) /_/ / / / /
+#         \___/_/ /____/\__,_/_/ /_/\__,_/\___/_/  /____/\____/_/ /_/
+#
+#                                    __
+#                        ____  _____/ /_  __________
+#                       /_  / / ___/ __ \/ ___/ ___/
+#                        / /_(__  ) / / / /  / /__
+#                       /___/____/_/ /_/_/   \___/
+#
+#===============================================================================
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+# Path to my oh-my-zsh installation
+export ZSH="/Users/cody/.oh-my-zsh"
 
-#====================    THEME    ====================
-ZSH_THEME=amuse
+ZSH_THEME="amuse"
 
-#====================    STUFF    ====================
+setopt autocd
+setopt noclobber
+
 ENABLE_CORRECTION="false"
-
 COMPLETION_WAITING_DOTS="true"
 
-# optional formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
 
+plugins=(
+    git
+    npm
+    osx
+    web-search
+    zsh-completions
+    zsh-syntax-highlighting
+)
 
-#====================  PLUGINS  ====================
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git brew chucknorris npm osx rand-quote web-search)
+# custom folder
+ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
 
+# aliases moved to ~/.oh-my-zsh/custom/aliases.zsh
 
-#====================  ALIASES  ====================
-
-source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
-
-#====================  SSH  ====================
-export SSH_KEY_PATH="~/.ssh/id_rsa"
-
-
-# #====================  ALIASES  ====================
-alias bbd='brew bundle dump -f'
-alias be='bundle exec'
-alias c='clear'
-alias conf='/usr/bin/git --git-dir=/Users/cody/.cfg-dotfiles/ --work-tree=/Users/cody'
-alias confloga='conf log --oneline --decorate --graph --all'
-alias conflog='conf log'
-alias confstat='conf status'
-alias hidepaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool false; killall Finder'
-alias showpaths='defaults write com.apple.finder _FXShowPosixPathInTitle -bool true; killall Finder'
-alias st='speedtest'
-alias lsa='ls -a'
-alias tp='trash-put'
-alias gohome='~ && ls -la'
-alias notes='cd ~/Projects/Notes && code .'
-alias vimrc='vim ~/.vimrc'
-
-. $(brew --prefix asdf)/asdf.sh
+# ASDF
+. /usr/local/opt/asdf/asdf.sh
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
