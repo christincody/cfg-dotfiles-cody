@@ -18,14 +18,6 @@ highlight Comment cterm=italic
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'git@github.com:Valloric/YouCompleteMe.git'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
-Plug 'leafgarland/typescript-vim'
-Plug 'sainnhe/gruvbox-material'
-Plug 'scrooloose/nerdtree'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-sensible'
-Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
@@ -44,7 +36,6 @@ colorscheme gruvbox-material
 set background=dark
 
 " open the preview window after entering the markdown buffer
-let g:mkdp_auto_start = 1
 let g:airline_theme = 'gruvbox_material'
 
 map <C-n> :NERDTreeToggle<CR>

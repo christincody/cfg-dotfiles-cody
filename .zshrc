@@ -15,6 +15,7 @@
 
 # Path to my oh-my-zsh installation
 export ZSH="/Users/cody/.oh-my-zsh"
+export PATH="/usr/local/sbin:$PATH"
 
 ZSH_THEME="amuse"
 
@@ -47,4 +48,4 @@ source $ZSH/oh-my-zsh.sh
 
 # ASDF
 . /usr/local/opt/asdf/asdf.sh
-. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+# . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
