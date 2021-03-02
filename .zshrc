@@ -1,10 +1,4 @@
 #===============================================================================
-#                 ____                     __
-#           _____/ __/________ _____  ____/ /__  ______________  ____
-#          / ___/ /_/ ___/ __ `/ __ \/ __  / _ \/ ___/ ___/ __ \/ __ \
-#         / /__/ __(__  ) /_/ / / / / /_/ /  __/ /  (__  ) /_/ / / / /
-#         \___/_/ /____/\__,_/_/ /_/\__,_/\___/_/  /____/\____/_/ /_/
-#
 #                                    __
 #                        ____  _____/ /_  __________
 #                       /_  / / ___/ __ \/ ___/ ___/
@@ -17,7 +11,7 @@
 export ZSH="/Users/cody/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
 
-ZSH_THEME="amuse"
+ZSH_THEME="agnoster"
 
 setopt autocd
 setopt noclobber
@@ -48,4 +42,4 @@ source $ZSH/oh-my-zsh.sh
 
 # ASDF
 . /usr/local/opt/asdf/asdf.sh
-# . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+neofetch
