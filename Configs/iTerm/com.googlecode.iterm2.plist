@@ -1046,13 +1046,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333333333333328</real>
+				<real>0.7803921568627451</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.88235294117647056</real>
+				<real>0.84313725490196079</real>
 				<key>Red Component</key>
-				<real>0.96862745098039216</real>
+				<real>0.88235294117647056</real>
 			</dict>
 			<key>Guid</key>
 			<string>F94567C4-EB55-41E5-98F0-9F075C2129F4</string>
@@ -1370,11 +1370,11 @@
 			<key>Name</key>
 			<string>cfsanderson_gruvbox-material-improved</string>
 			<key>Non Ascii Font</key>
-			<string>FiraMonoForPowerline-Regular 12</string>
+			<string>FiraCodeNerdFontCompleteM-Regular 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraCodeiScript-Regular 12</string>
+			<string>FiraCodeNerdFontCompleteM-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Place Prompt at First Column</key>
